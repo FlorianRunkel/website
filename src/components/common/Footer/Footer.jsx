@@ -27,7 +27,6 @@ const Footer = () => {
               height: { xs: 30, sm: 50 }, // Größe anpassen
               width: { xs: 30, sm: 50 },  // gleiche Breite für perfekten Kreis
               borderRadius: '50%',        // rund machen
-              border: '2px solid #000',   // optionaler Rahmen
               objectFit: 'cover',         // Bild füllt Kreis korrekt aus
               mx: 'auto',   
               mb:1             // zentrieren

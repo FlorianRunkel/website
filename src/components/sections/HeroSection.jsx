@@ -116,9 +116,9 @@ const HeroSection = () => {
               I AM PASSIONATE ABOUT BUILDING AI-DRIVEN SOLUTIONS AND DIGITAL TRANSFORMATION STRATEGIES THAT STAND OUT FROM THE CROWD.
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
+              <Typography sx={{ fontSize: '0.7rem', fontWeight: 700, color: '#333', letterSpacing: 1 }}>CONSULTING</Typography>
               <Typography sx={{ fontSize: '0.7rem', fontWeight: 700, color: '#333', letterSpacing: 1 }}>MACHINE LEARNING</Typography>
               <Typography sx={{ fontSize: '0.7rem', fontWeight: 700, color: '#333', letterSpacing: 1 }}>FULL-STACK DEVELOPMENT</Typography>
-              <Typography sx={{ fontSize: '0.7rem', fontWeight: 700, color: '#333', letterSpacing: 1 }}>CONSULTING</Typography>
             </Box>
           </Box>
         </Box>

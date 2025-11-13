@@ -62,7 +62,7 @@ const Header = () => {
                   '&:hover': { bgcolor: '#f5f5f5' },
                   textTransform: 'uppercase',
                   fontSize: '0.7rem',
-                  fontWeight: 800,
+                  fontWeight: 0,
                 }}
               >
                 {section.toUpperCase()}

@@ -52,7 +52,7 @@ const PerformanceSection = () => {
               fontWeight: 700,
               letterSpacing: 3,
               color: '#555',
-              mt: 2,
+              mt: 4,
               display: 'block',
             }}
           >
