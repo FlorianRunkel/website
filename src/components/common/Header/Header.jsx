@@ -43,7 +43,7 @@ const Header = () => {
             }}
             onClick={() => handleNavClick('me')}
           >
-            PORTFOLIO.
+            Florian Runkel
           </Typography>
 
           {/* Navigation für große Screens (md und größer) */}
