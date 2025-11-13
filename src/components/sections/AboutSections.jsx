@@ -19,7 +19,7 @@ const AboutSection = () => {
     {
       logo: '/netcompany-logo.png',
       title: 'Netcompany',
-      subtitle: 'Founders Associate Tech & AI',
+      subtitle: 'IT Consultant',
       description: 'Applying cutting-edge technology to real-world business challenges and driving digital adoption within high-profile projects.',
     },
     {

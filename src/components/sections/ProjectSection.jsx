@@ -66,7 +66,6 @@ const ProjectsSection = () => {
             }}
           >
             “Education is not the learning of facts, but the training of the mind to think.”  
-            <br />– Albert Einstein
           </Typography>
 
           <Typography
