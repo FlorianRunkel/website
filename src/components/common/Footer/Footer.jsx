@@ -21,7 +21,7 @@ const Footer = () => {
         <Box sx={{ textAlign: 'center', mb: 3}}>
           <Box
             component="img"
-            src="public/logo.png"
+            src="/logo.png"
             alt="Logo"
             sx={{
               height: { xs: 30, sm: 50 }, // Größe anpassen
