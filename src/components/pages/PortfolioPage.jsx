@@ -10,18 +10,18 @@ import PerformanceSection from '../sections/PerformanceSection.jsx';
 
 const PortfolioPage = () => {
   return (
-    <Box sx={{ bgcolor: '#FFFFFF', minHeight: '100vh' }}>
+    <Box sx={{ bgcolor: '#FFFFFF'}}>
       <Header />
-      <Box id="me" sx={{ scrollMarginTop: '72px' }}>
+      <Box id="me" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '72px', lg: '72px' } }}>
         <HeroSection />
       </Box>
-      <Box id="about" sx={{ scrollMarginTop: '72px' }}>
+      <Box id="about" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '72px', lg: '72px' } }}>
         <AboutSection />
       </Box>
-      <Box id="projects" sx={{ scrollMarginTop: '72px' }}>
+      <Box id="projects" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '72px', lg: '72px' } }}>
         <ProjectSection/>
       </Box>
-      <Box id="sports" sx={{ scrollMarginTop: '82px' }}>
+      <Box id="sports" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '82px', lg: '82px' } }}>
         <PerformanceSection />
       </Box>
       <Footer />

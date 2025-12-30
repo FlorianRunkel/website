@@ -23,7 +23,15 @@ const theme = createTheme({
     h2: { fontSize: '2.5rem', fontWeight: 700 },
     // Definiere weitere Typografie-Varianten, falls nötig
   },
-  // Du kannst hier auch die Breakpoints anpassen, um die Responsivität zu verfeinern
+  breakpoints: {
+    values: {
+      xs: 0,      // Mobile Phones
+      sm: 600,    // Tablets (iPad portrait)
+      md: 900,    // Tablets (iPad landscape) / Small Laptops
+      lg: 1200,   // Laptops / Desktops
+      xl: 1536,   // Large Desktops
+    },
+  },
 });
 
 export default theme;

@@ -15,24 +15,24 @@ const Footer = () => {
   };
 
   return (
-    <Box sx={{ mb:4}}>
-      <Container maxWidth="lg">
+    <Box sx={{ mb: { xs: 3, sm: 3.5, md: 4, lg: 4 }}}>
+      <Container maxWidth="lg" sx={{ px: { xs: 3, sm: 4, md: 4, lg: 4 } }}>
         {/* Logo zentriert */}
-        <Box sx={{ textAlign: 'center', mb: 3}}>
+        <Box sx={{ textAlign: 'center', mb: { xs: 2.5, sm: 3, md: 3 }}}>
           <Box
             component="img"
             src="/logo.png"
             alt="Logo"
             sx={{
-              height: { xs: 30, sm: 50 }, // Größe anpassen
-              width: { xs: 30, sm: 50 },  // gleiche Breite für perfekten Kreis
-              borderRadius: '50%',        // rund machen
-              objectFit: 'cover',         // Bild füllt Kreis korrekt aus
+              height: { xs: 30, sm: 40, md: 50, lg: 50 },
+              width: { xs: 30, sm: 40, md: 50, lg: 50 },
+              borderRadius: '50%',
+              objectFit: 'cover',
               mx: 'auto',   
-              mb:1             // zentrieren
+              mb: { xs: 0.8, sm: 1, md: 1 }
             }}
           />
-          <Typography sx={{ fontSize: '0.8rem', color: '#777' }}>
+          <Typography sx={{ fontSize: { xs: '0.75rem', sm: '0.8rem', md: '0.8rem', lg: '0.8rem' }, color: '#777' }}>
             © {new Date().getFullYear()} Florian Runkel. All rights reserved.
           </Typography>
         </Box>
