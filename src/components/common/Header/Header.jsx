@@ -35,11 +35,12 @@ const Header = () => {
           <Typography
             sx={{
               fontWeight: 900,
-              fontSize: { xs: '0.8rem', sm: '1.05rem', md: '1.1rem', lg: '1.15rem' },
+              fontSize: { xs: '1.3rem', sm: '1.5rem', md: '1.5rem', lg: '1.5rem' },
               letterSpacing: 1,
               color: '#000',
               flexShrink: 0,
               cursor: 'pointer',
+              fontFamily: "'Playfair Display', serif",
             }}
             onClick={() => handleNavClick('me')}
           >
@@ -71,7 +72,7 @@ const Header = () => {
           </Box>
 
           {/* Social Icons + Burger für kleine Screens */}
-          <Box sx={{ display: 'flex', gap: { xs: 1, sm: 1.5, md: 1.5 }, alignItems: 'center' }}>
+          <Box sx={{ display: 'flex', gap: { xs: 0.6, sm: 1.5, md: 1.5 }, alignItems: 'center' }}>
             {/* GitHub */}
             <Box
               onClick={() => handleSocialClick('github')}

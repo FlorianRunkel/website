@@ -46,41 +46,56 @@ const ProjectsSection = () => {
     <Box sx={{ py: { xs: 5, sm: 6, md: 8, lg: 8 }, bgcolor: '#fff', color: '#111', borderBottom: '1px solid #e0e0e0' }}>
       <Container maxWidth="md" sx={{ px: { xs: 3, sm: 4, md: 3, lg: 0 } }}>
 
-        {/* HEADER */}
-        <Box
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: { xs: 2, sm: 3, md: 4 },
+          flexWrap: 'nowrap',
+          mb: { xs: 2, sm: 4, md: 6 },
+        }}
+      >
+        {/* LINKS – BREITER */}
+        <Typography
           sx={{
-            display: 'grid',
-            gridTemplateColumns: { xs: '1fr', sm: '1fr', md: '1fr 0.4fr' },
-            gap: { xs: 4, sm: 5, md: 4, lg: 4 },
-            mb: { xs: 5, sm: 6, md: 8, lg: 8 },
-            alignItems: 'start',
+            fontSize: {
+              xs: 'clamp(0.8rem, 3vw, 1rem)',
+              sm: '1.1rem',
+              md: '1rem',
+            },
+            fontWeight: 400,
+            color: '#333',
+            lineHeight: 1.85,
+            textAlign: 'justify',
+            fontStyle: 'italic',
+            flex: '5 0 40%',
+            maxWidth: '950px',
           }}
         >
-          <Typography
-            sx={{
-              fontSize: { xs: '1.05rem', sm: '1.05rem', md: '1rem', lg: '1rem' },
-              fontStyle: 'italic',
-              color: '#333',
-              lineHeight: { xs: 1.85, sm: 1.9, md: 1.9 },
-              maxWidth: '700px',
-              pt: { xs: 0, sm: 0, md: 4, lg: 4 },
-            }}
-          >
-            "Education is not the learning of facts, but the training of the mind to think."  
-          </Typography>
+          "Education is not the learning of facts, but the training of the mind to think."
+        </Typography>
 
-          <Typography
-            sx={{
-              fontSize: { xs: 'clamp(3rem, 14vw, 3.8rem)', sm: 'clamp(3.5rem, 12vw, 4.5rem)', md: '5rem', lg: '5rem' },
-              fontWeight: 800,
-              letterSpacing: -2,
-              color: '#111',
-              textAlign: { xs: 'left', sm: 'left', md: 'unset' }
-            }}
-          >
-            PROJECTS
-          </Typography>
-        </Box>
+        {/* RECHTS – SCHMALER */}
+        <Typography
+          sx={{
+            fontSize: {
+              xs: 'clamp(2rem, 4vw, 1rem)',
+              sm: 'clamp(3.8rem, 14vw, 4.6rem)',
+              md: '5.2rem',
+            },
+            fontWeight: 900,
+            letterSpacing: -2,
+            color: '#111',
+            textAlign: 'center',
+
+            flex: '1 0 auto',      // 🔥 bleibt kompakt
+            whiteSpace: 'nowrap',  // verhindert Umbruch
+          }}
+        >
+          PROJECTS
+        </Typography>
+      </Box> 
 
         {/* MASTER THESIS */}
         <Box sx={{ mb: { xs: 5, sm: 6, md: 8, lg: 8 } }}>
@@ -99,12 +114,12 @@ const ProjectsSection = () => {
           </Typography>
             <Typography
             sx={{
-              fontSize: { xs: '1.1rem', sm: '1.05rem', md: '1rem', lg: '1rem' },
+              fontSize: { xs: '0.85rem', sm: '1.05rem', md: '1rem', lg: '1rem' },
               fontWeight: 600,
               color: '#111',
               letterSpacing: 1,
-              mb: { xs: 2.5, sm: 3, md: 3 },
-              textAlign: 'left',
+              mb: { xs: 2, sm: 3, md: 3 },
+              textAlign: {xs: 'center', sm: "left", md: "left",}
             }}
           >
             Anticipating Job Changes: An Explainable Machine Learning Approach for Talent Acquisition
@@ -165,12 +180,12 @@ const ProjectsSection = () => {
          </Typography>
         <Typography
             sx={{
-              fontSize: { xs: '1.1rem', sm: '1.05rem', md: '1rem', lg: '1rem' },
+              fontSize: { xs: '0.85rem', sm: '1.05rem', md: '1rem', lg: '1rem' },
               fontWeight: 600,
               color: '#111',
               letterSpacing: 1,
-              mb: { xs: 2.5, sm: 3, md: 3 },
-              textAlign: { xs: 'left', sm: 'left', md: 'right' },
+              mb: { xs: 2, sm: 3, md: 3 },
+              textAlign: {xs: 'center', sm: "left", md: "left",}
             }}
           >
             Automatic categorization of companies based on their website content as software solution providers in e-commerce, banking and cloud services using text classifiers

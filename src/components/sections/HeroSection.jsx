@@ -117,7 +117,7 @@ const HeroSection = () => {
             }}
           >
             <Typography sx={{ fontSize: '1.8rem', fontWeight: 700 }}>
-              &lt;coder&gt;
+            &lt;&lt;coder&gt;&gt;
             </Typography>
             <Typography sx={{ fontSize: '0.85rem', color: '#888', maxWidth: 260 }}>
             Developing scalable systems that bridge technology and business requirements.
