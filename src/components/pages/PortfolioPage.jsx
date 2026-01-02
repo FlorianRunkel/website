@@ -21,7 +21,7 @@ const PortfolioPage = () => {
       <Box id="projects" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '72px', lg: '72px' } }}>
         <ProjectSection/>
       </Box>
-      <Box id="sports" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '82px', lg: '82px' } }}>
+      <Box id="beyond" sx={{ scrollMarginTop: { xs: '60px', sm: '65px', md: '82px', lg: '82px' } }}>
         <PerformanceSection />
       </Box>
       <Footer />

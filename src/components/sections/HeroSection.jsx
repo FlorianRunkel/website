@@ -21,10 +21,11 @@ const HeroSection = () => {
               md: 'clamp(4rem, 8vw, 5.2rem)',
             },
             fontWeight: 900,
-            letterSpacing: '-2px',
+            letterSpacing: '2px',
             textAlign: 'center',
             lineHeight: 1,
             mb: { xs: -4, md: -6 },
+            fontFamily: "'Playfair Display', serif bold",
           }}
         >
           EXPLORE MY

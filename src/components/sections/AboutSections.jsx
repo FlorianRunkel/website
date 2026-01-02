@@ -56,8 +56,9 @@ As an IT Consultant at Netcompany, I combine strategic thinking with technical e
 `;
 
   return (
-    <Box sx={{ py: { xs: 5, sm: 6, md: 8, lg: 8 }, bgcolor: '#fff', color: '#111', borderBottom: '1px solid #e0e0e0' }}>
-      <Container maxWidth="md" sx={{ px: { xs: 3, sm: 4, md: 3, lg: 0 } }}>
+    <Box sx={{ py: { xs: 3, sm: 2, md: 4, lg: 4 },  bgcolor: '#fff', color: '#111', borderBottom: '1px solid #e0e0e0' }}>
+     
+     <Container maxWidth="lg" sx={{ px: { xs: 3} }}>
 
       <Box
         sx={{
@@ -72,7 +73,7 @@ As an IT Consultant at Netcompany, I combine strategic thinking with technical e
 
       <Typography
         sx={{
-          fontSize: { xs: '2.5rem', sm: '4rem', md: '5.2rem' },
+          fontSize: { xs: '2rem', sm: '4rem', md: '5.2rem' },
           fontWeight: 900,
           letterSpacing: -2,
           color: '#111',

@@ -43,8 +43,9 @@ const ExpandableText = ({ children, maxChars = 550 }) => {
 
 const ProjectsSection = () => {
   return (
-    <Box sx={{ py: { xs: 5, sm: 6, md: 8, lg: 8 }, bgcolor: '#fff', color: '#111', borderBottom: '1px solid #e0e0e0' }}>
-      <Container maxWidth="md" sx={{ px: { xs: 3, sm: 4, md: 3, lg: 0 } }}>
+    <Box sx={{ py: { xs: 3, sm: 2, md: 4, lg: 4 }, bgcolor: '#fff', color: '#111', borderBottom: '1px solid #e0e0e0' }}>
+
+      <Container maxWidth="lg" sx={{ px: { xs: 3} }}>
 
       <Box
         sx={{

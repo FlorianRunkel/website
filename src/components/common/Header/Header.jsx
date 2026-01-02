@@ -25,10 +25,10 @@ const Header = () => {
     }
   };
 
-  const navLinks = ['me', 'about', 'projects', 'sports'];
+  const navLinks = ['me', 'about', 'projects', 'beyond'];
 
   return (
-    <Box sx={{ py: { xs: 3.5, sm: 4, md: 3 }, borderBottom: '1px solid #e0e0e0', position: 'sticky', top: 0, bgcolor: 'white', zIndex: 100 }}>
+    <Box sx={{ py: { xs: 3, sm: 4, md: 3 }, borderBottom: '1px solid #e0e0e0', position: 'sticky', top: 0, bgcolor: 'white', zIndex: 100 }}>
       <Container maxWidth="lg" sx={{ px: { xs: 3, sm: 4, md: 4, lg: 4 } }}>
         <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: { xs: 1.5, sm: 2, md: 2 } }}>
           {/* Logo */}
@@ -147,44 +147,98 @@ const Header = () => {
           </Box>
         </Box>
       </Container>
-
-      {/* Drawer für kleine Screens und Tablets */}
       <Drawer
-        anchor="right"
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-        PaperProps={{
-          sx: {
-            width: { xs: 250, sm: 280 },
-            p: { xs: 3, sm: 3.5 },
-            bgcolor: '#ffffff',
-          }
+  anchor="right"
+  open={drawerOpen}
+  onClose={() => setDrawerOpen(false)}
+  PaperProps={{
+    sx: {
+      width: { xs: 200, sm: 300 },
+      bgcolor: '#fff',
+      px: { xs: 3, sm: 4 },
+      py: 4,
+      borderLeft: '1px solid #ededed', // extrem dünn & ruhig
+    },
+  }}
+>
+  <Box
+    sx={{
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
+    }}
+  >
+    {/* TOP */}
+    <Box>
+      {/* Logo + Text */}
+      <Box
+        sx={{
+          display: 'flex',
+          justifyContent: 'center', // horizontal
+          alignItems: 'center',     // vertikal
+          gap: 2.5,
         }}
       >
-        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-          {navLinks.map((section) => (
-            <Box
-              key={section}
-              onClick={() => handleNavClick(section)}
-              sx={{
-                px: 2.5,
-                py: { xs: 1.8, sm: 2 },
-                borderRadius: '10px',
-                textAlign: 'center',
-                textTransform: 'uppercase',
-                fontWeight: 600,
-                fontSize: { xs: '0.8rem', sm: '0.85rem' },
-                cursor: 'pointer',
-                bgcolor: '#fff',
-                transition: 'all 0.2s',
-                '&:hover': { bgcolor: '#f5f5f5' },
-              }}
-            >
-              {section.toUpperCase()}
-            </Box>
-          ))}
-        </Box>
-      </Drawer>
+        <Box
+          component="img"
+          src="/logo.png"
+          alt="Logo"
+          sx={{ height: 26, opacity: 0.85 }}
+        />
+
+      <Typography
+          sx={{
+            fontSize: '0.85rem',
+            fontWeight: 700,
+            letterSpacing: 8,
+            color: '#111',
+            whiteSpace: 'nowrap',
+          }}
+        >
+          PORTFOLIO
+        </Typography>
+      </Box>
+
+      {/* ultra dünne Linie */}
+      <Box
+        sx={{
+          width: '100%',
+          height: '1px',
+          bgcolor: '#ededed',
+          my: 4,
+        }}
+      />
+      {/* Navigation */}
+      <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+        {navLinks.map((section) => (
+          <Typography
+            key={section}
+            onClick={() => handleNavClick(section)}
+            sx={{
+              fontSize: '0.85rem',
+              fontWeight: 600,
+              letterSpacing: '0.18em',
+              textTransform: 'uppercase',
+              color: '#555',
+              cursor: 'pointer',
+              width: 'fit-content',
+              transition: 'all 0.25s ease',
+
+              '&:hover': {
+                color: '#111',
+                transform: 'translateX(6px)',
+              },
+            }}
+          >
+            {section}
+          </Typography>
+        ))}
+      </Box>
+    </Box>
+  </Box>
+</Drawer>
+
 
     </Box>
   );

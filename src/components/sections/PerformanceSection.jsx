@@ -66,9 +66,9 @@ const PerformanceSection = () => {
   ];
 
   return (
-    <Box sx={{ bgcolor: '#fff', color: '#111', py: { xs: 5, sm: 6, md: 7, lg: 7 } }}>
-      <Container maxWidth="md" sx={{ px: { xs: 3, sm: 4, md: 3, lg: 0 } }}>
-        {/* Header */}
+    <Box sx={{ bgcolor: '#fff', color: '#111', py: { xs: 3, sm: 2, md: 4, lg: 4 } }}>
+      <Container maxWidth="lg" sx={{ px: { xs: 3} }}>
+
         <Box sx={{ textAlign: 'center', mb: { xs: 6, sm: 7, md: 7 } }}>
           <Typography
             variant="overline"
