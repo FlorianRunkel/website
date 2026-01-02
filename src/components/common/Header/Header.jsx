@@ -35,7 +35,7 @@ const Header = () => {
           <Typography
             sx={{
               fontWeight: 900,
-              fontSize: { xs: '0.95rem', sm: '1.05rem', md: '1.1rem', lg: '1.15rem' },
+              fontSize: { xs: '0.8rem', sm: '1.05rem', md: '1.1rem', lg: '1.15rem' },
               letterSpacing: 1,
               color: '#000',
               flexShrink: 0,

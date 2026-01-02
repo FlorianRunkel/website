@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Container, Paper } from '@mui/material';
-import { Business, School, Code } from '@mui/icons-material';
+import { Business, School, Code, Block } from '@mui/icons-material';
 
 const AboutSection = () => {
   const competencies = [
@@ -60,11 +60,11 @@ const AboutSection = () => {
         >
             <Typography
               sx={{
-                fontSize: { xs: 'clamp(3rem, 16vw, 4rem)', sm: 'clamp(3.8rem, 14vw, 4.6rem)', md: '5.2rem', lg: '5.2rem'},
+                fontSize: { xs: 'clamp(3.5rem, 8vw, 2rem)', sm: 'clamp(3.8rem, 14vw, 4.6rem)', md: '5.2rem', lg: '5.2rem'},
                 fontWeight: 800,
                 letterSpacing: -2,
                 color: '#111',
-                textAlign: { xs: 'left', sm: 'left', md: 'unset' }
+                textAlign: { xs: 'left', sm: 'left', md: 'unset' },
               }}
             >
               ABOUT
@@ -72,13 +72,14 @@ const AboutSection = () => {
 
             <Typography
               sx={{
-                fontSize: { xs: 'clamp(1rem, 3vw, 1.15rem)', sm: '1.1rem', md: '1rem', lg: '1rem' },
+                fontSize: { xs: 'clamp(0.9rem, 3vw, 1.15rem)', sm: '1.1rem', md: '1rem', lg: '1rem' },
                 fontWeight: 500,
                 fontStyle: 'normal',
                 color: '#333',
                 lineHeight: { xs: 1.85, sm: 1.9, md: 1.9 },
                 maxWidth: '750px', 
-                pt: { xs: 0, sm: 0, md: 4, lg: 4 }
+                pt: { xs: 0, sm: 0, md: 4, lg: 4 },
+                textAlign: 'justify'
               }}
             >
               "{quote}"
@@ -100,7 +101,6 @@ const AboutSection = () => {
                 fontSize: { xs: '1.5rem', sm: '1.55rem', md: '1.35rem', lg: '1.35rem' },
                 fontWeight: 700,
                 color: '#111',
-                letterSpacing: 1,
                 mb: { xs: 1.5, sm: 2, md: 2 }
               }}
             >
@@ -108,7 +108,7 @@ const AboutSection = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: '1.05rem', sm: '1.05rem', md: '1rem', lg: '1rem' },
+                fontSize: { xs: '1rem', sm: '1rem', md: '1rem', lg: '1rem' },
                 lineHeight: { xs: 1.95, sm: 2, md: 2 },
                 color: '#444',
                 textAlign: 'justify',

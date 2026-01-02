@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography, Container, Grid, Paper } from '@mui/material';
-import { DirectionsBike, DirectionsRun, Code, Loop, TrendingUp } from '@mui/icons-material';
+import { DirectionsBike, DirectionsRun, Code, Loop, TrendingUp, Brightness1 } from '@mui/icons-material';
 
 const PerformanceSection = () => {
   const primaryHeadline = 'Performance & Nature';
@@ -101,6 +101,7 @@ const PerformanceSection = () => {
                     width: '100%', 
                     height: '100%', 
                     objectFit: 'cover',
+                    filter: 'brightness(0.8)', 
                   }}
                 />
                 

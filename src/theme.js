@@ -14,14 +14,25 @@ const theme = createTheme({
     }
   },
   typography: {
-    fontFamily: [
-      'Helvetica Neue',
-      'Arial',
-      'sans-serif',
-    ].join(','),
-    h1: { fontSize: '6rem', fontWeight: 900, lineHeight: 1 },
-    h2: { fontSize: '2.5rem', fontWeight: 700 },
-    // Definiere weitere Typografie-Varianten, falls nötig
+    fontFamily: ['Helvetica Neue', 'Arial', 'sans-serif'].join(','),
+    h1: {
+      fontWeight: 900,
+      lineHeight: 1,
+      fontSize: '3rem', // Mobile default
+      '@media (min-width:600px)': { fontSize: '4.5rem' }, // sm+
+      '@media (min-width:900px)': { fontSize: '6rem' }, // md+
+    },
+    h2: {
+      fontWeight: 700,
+      fontSize: '1.5rem', // Mobile default
+      '@media (min-width:600px)': { fontSize: '2rem' }, // sm+
+      '@media (min-width:900px)': { fontSize: '2.5rem' }, // md+
+    },
+    body1: {
+      fontSize: '1rem',
+      '@media (min-width:600px)': { fontSize: '1.05rem' },
+      '@media (min-width:900px)': { fontSize: '1.1rem' },
+    },
   },
   breakpoints: {
     values: {

@@ -202,7 +202,7 @@ const ProjectsSection = () => {
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
-                filter: 'brightness(1.2)'
+                filter: 'brightness(1)', 
                 }}
             />
             </Box>

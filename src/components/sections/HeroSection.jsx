@@ -48,7 +48,7 @@ const HeroSection = () => {
           <Box
             sx={{
               display: { xs: 'none', md: 'block' },
-              textAlign: 'right',
+              textAlign: 'center',
             }}
           >
             <Typography sx={{ fontSize: '1.8rem', fontWeight: 700, }}>
@@ -113,7 +113,7 @@ const HeroSection = () => {
           <Box
             sx={{
               display: { xs: 'none', md: 'block' },
-              textAlign: 'left',
+              textAlign: 'center',
             }}
           >
             <Typography sx={{ fontSize: '1.8rem', fontWeight: 700 }}>
