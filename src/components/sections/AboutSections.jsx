@@ -19,11 +19,32 @@ const AboutSection = () => {
         'Mastering the intersection of technology, data, and business strategy, with a focus on AI/ML applications and system integration.',
     },
     {
+      logo: '/aurio.jpeg',
+      title: 'Founders Associate',
+      subtitle: 'Working Student',
+      description:
+        'Developing AI-driven solutions using Python. Supporting product development and customer success initiatives',
+    },
+    {
       logo: '/hm-logo.png',
       title: 'B.Sc. Information Systems and Management',
       subtitle: 'Hochschule München',
       description:
         'Foundational expertise in software development, database systems, and business administration, building a robust technological baseline.',
+    },
+    {
+      logo: '/vodafone_logo.jpeg',
+      title: 'Software Engineer',
+      subtitle: 'Internship',
+      description:
+        'Assisted in team and project management. Applied agile methodologies, including Scrum and SAFe. Developed software solutions using Java',
+    },
+    {
+      logo: '/asmpt_smt_solutions_logo.jpeg',
+      title: 'Software Engineer',
+      subtitle: 'Internship',
+      description:
+        'Developed graphical user interfaces for Measurement System Analysis using Python. Created dashboards for continuous global monitoring of product quality, utilizing internal databases and SAP',
     },
   ];
 
@@ -154,8 +175,8 @@ As an IT Consultant at Netcompany, I combine strategic thinking with technical e
             {/* Logo */}
             <Box
               sx={{
-                width: 70,
-                height: 70,
+                width: 60,
+                height: 60,
                 gridRow: '1 / span 1',
                 display: 'flex',
                 alignItems: 'center',
