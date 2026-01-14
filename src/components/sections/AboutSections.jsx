@@ -1,4 +1,4 @@
-import React from 'react';
+import { useRef, useState } from 'react';
 import { Box, Typography, Container, Paper } from '@mui/material';
 import { Business, School } from '@mui/icons-material';
 
@@ -44,7 +44,7 @@ const AboutSection = () => {
       title: 'Software Engineer',
       subtitle: 'Internship',
       description:
-        'Developed graphical user interfaces for Measurement System Analysis using Python. Created dashboards for continuous global monitoring of product quality, utilizing internal databases and SAP',
+        'Developed Python GUIs for Measurement System Analysis and created dashboards for global product quality monitoring via SAP integration.',
     },
   ];
 
@@ -52,9 +52,38 @@ const AboutSection = () => {
     'The true challenge is not building the technology, but architecting the transformation it enables.';
 
   const professionalExpertiseText = `
-As an IT Consultant at Netcompany, I combine strategic thinking with technical excellence to deliver transformative digital solutions across various industries. My primary focus is on leveraging advanced data methods and system architecture principles to solve complex business problems. My academic foundation, including a Master's in Information Systems, drives my data-driven approach to problem-solving. I am committed to bridging the gap between cutting-edge technology and measurable business impact, consistently delivering innovative, scalable, and sustainable solutions for clients.
+As an IT Consultant, I bridge the gap between complex technology and business success. My expertise lies in designing innovative digital solutions that drive measurable results for clients across diverse industries. With a strong foundation in machine learning, data analytics, and modern software development, I transform business challenges into strategic opportunities through technology. My approach combines deep technical knowledge with business acumen to deliver solutions that are not only technically sound but also commercially viable. I specialize in requirements analysis, system architecture design, and the implementation of scalable IT infrastructures. Whether it's developing predictive models, automating business processes, or modernizing legacy systems, I ensure that every solution aligns with my clients' strategic objectives. What sets me apart is my ability to make complex technical concepts accessible to stakeholders at all levels. I believe in collaborative partnerships with clients, working closely to understand their unique challenges and crafting tailored solutions that exceed expectations. My commitment to continuous learning and staying ahead of technological trends ensures that I bring cutting-edge insights to every project. Through my academic research, I've developed a unique perspective on how emerging technologies can solve real-world business problems. I'm passionate about leveraging data-driven insights and innovative thinking to help organizations navigate their digital transformation journey successfully.
 `;
 
+  const scrollRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+    scrollRef.current.style.cursor = 'grabbing';
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = (x - startX); // Scroll-Geschwindigkeit anpassen
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    scrollRef.current.style.cursor = 'grab';
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+    scrollRef.current.style.cursor = 'grab';
+  };
   return (
     <Box sx={{ py: { xs: 3, sm: 2, md: 4, lg: 4 },  bgcolor: '#fff', color: '#111', borderBottom: '1px solid #e0e0e0' }}>
      
@@ -134,6 +163,11 @@ As an IT Consultant at Netcompany, I combine strategic thinking with technical e
           }}
         >
       <Box
+              ref={scrollRef}
+              onMouseDown={handleMouseDown}
+              onMouseMove={handleMouseMove}
+              onMouseUp={handleMouseUp}
+              onMouseLeave={handleMouseLeave}
         sx={{
           display: 'flex',
           gap: 3,
@@ -161,6 +195,8 @@ As an IT Consultant at Netcompany, I combine strategic thinking with technical e
               alignItems: 'start',
               gap: 2,
               p: 3,
+              cursor: "grab",
+              userSelect: 'none',
               borderRadius: 3,
               minWidth: 380,
               maxWidth: 400,
@@ -218,7 +254,7 @@ As an IT Consultant at Netcompany, I combine strategic thinking with technical e
               sx={{
                 color: '#555',
                 fontSize: '0.88rem',
-                lineHeight: 1.6,
+                lineHeight: 1.5,
                 gridColumn: '1 / span 2', // Vollbreite über beide Spalten
               }}
             >

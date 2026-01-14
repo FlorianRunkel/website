@@ -56,7 +56,7 @@ const HeroSection = () => {
               IT Consultant
             </Typography>
             <Typography sx={{ fontSize: '0.85rem', color: '#888', maxWidth: 260, ml: 'auto' }}>
-            Advising clients on technology strategy and business improvement.
+            Advising clients on technology strategy and business improvement
             </Typography>
           </Box>
 
@@ -120,8 +120,8 @@ const HeroSection = () => {
             <Typography sx={{ fontSize: '1.8rem', fontWeight: 700 }}>
             &lt;&lt;coder&gt;&gt;
             </Typography>
-            <Typography sx={{ fontSize: '0.85rem', color: '#888', maxWidth: 260 }}>
-            Developing scalable systems that bridge technology and business requirements.
+            <Typography sx={{ fontSize: '0.85rem', color: '#888', maxWidth: 260}}>
+            Developing scalable systems that bridge technology and business requirements
           </Typography>
           </Box>
         </Box>
